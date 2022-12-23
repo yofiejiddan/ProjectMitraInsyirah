@@ -1,3 +1,38 @@
 <resources>
-    <string name="app_name">ProjectMitraInsyirah</string>
+    <string name="app_name">MitraInsyirah</string>
+    <string name="title_land1">Bergabunglah Menjadi Mitra Kami</string>
+    <string name="capt_land1">Kami telah bekerjasama dengan beberapa
+ UMKM yang telah tergabung dalam satu toko
+ini</string>
+    <string name="title_land2">Mudah dan Praktis</string>
+    <string name="capt_land2">Hanya dengan mengakses aplikasi ini anda bisa
+mengajukan produk anda secara cepat ke toko
+kami </string>
+    <string name="title_land3">Proses Pengajuan Mudah Jadi Mitra Kami</string>
+    <string name="capt_land3">Kini,kami dapat menerima semua mitra untuk
+menjajakan produk unggulan di semua etalase
+kami melalui aplikasi</string>
+    <string name="capt_button1">Selanjutnya</string>
+    <string name="capt_button2">Daftar Mitra Sekarang</string>
+    <string name="login_button">Masuk</string>
+    <string name="form_email">Email</string>
+    <string name="form_password">Password</string>
+    <string name="form_nama">Nama</string>
+    <string name="form_alamat">Alamat</string>
+    <string name="form_hp">No.Handphone</string>
+    <string name="form_namausaha">Nama Usaha</string>
+    <string name="capt_buttondaftar">Daftar Mitra</string>
+    <string name="title_beranda">Produk Anda Belum Ada di Daftar</string>
+    <string name="capt_beranda">Segera daftarkan produk anda dengan menekan 
+tanda tambah dibawah ini</string>
+    <string name="form_namaproduk">Nama Produk</string>
+    <string name="form_jumlahstok">Jumlah Stok</string>
+    <string name="form_harga">Harga</string>
+    <string name="form_deskripsi">Deskripsi</string>
+    <string name="about">Tentang Mitra Insyirah</string>
+    <string name="deskripsi_about">   Toko Insyirah oleh-oleh Pekanbaru berdiri sejak tahun 2016. Mitra Insyirah menyediakan Pancake durian, ketan talam durian, soes durian, aneka brownies, aneka cake ,dimsum ,cireng , cilok , dan aneka minuman hits Pekanbaru. Toko Insyirah ini menyediakan tempat bagi para usaha rumahan maupun UMKM untuk bekesempatan mengisi rak dan etalase di toko ini.
+     Toko Insyirah terletak di Jalan Arifin Ahmad, kecamatan Marpoyan Damai, kelurahan Sidolmulyo.</string>
+    <string name="kontak_about">Hubungi Kami
+
+0812-5117-4138 </string>
 </resources>
