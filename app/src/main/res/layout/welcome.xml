@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/ellipse_4"
+        android:layout_width="272dp"
+        android:layout_height="217dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-89dp"
+        android:background="@drawable/ecclipse_4"
+        />
+
+    <View
+        android:id="@+id/durian_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="289dp"
+        android:background="@drawable/logoinsyirah"
+        />
+    <TextView
+        android:id="@+id/mitrainsyir"
+        android:layout_width="103dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="345dp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center_horizontal|top"
+        />
+    <View
+        android:id="@+id/ellipse_3"
+        android:layout_width="262dp"
+        android:layout_height="249dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-63dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/ellipse_5"
+        />
+
+
+
+</RelativeLayout>
