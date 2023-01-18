@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".vPagerFragment.screen.LandingPage3">
     <View
         android:id="@+id/image3"
         android:layout_width="330dp"
         android:layout_height="334.04dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="40dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/landingpage3"
         />
     <TextView
@@ -17,11 +20,12 @@
         android:layout_width="255dp"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="52dp"
+        android:layout_marginLeft="80dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="354dp"
+        android:layout_marginTop="440dp"
+        android:fontFamily="@font/poppinsbold"
         android:text="@string/title_land3"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:gravity="center_horizontal|top"
@@ -31,9 +35,10 @@
         android:layout_width="313dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="23dp"
+        android:layout_marginLeft="50dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="406dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/poppins"
         android:text="@string/capt_land3"
         android:textStyle="bold"
         android:textSize="12sp"
@@ -44,9 +49,9 @@
         android:layout_width="14dp"
         android:layout_height="14dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="149dp"
+        android:layout_marginLeft="170dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="570dp"
         android:background="@drawable/lingkaran2"
         />
     <View
@@ -54,9 +59,9 @@
         android:layout_width="14dp"
         android:layout_height="14dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="173dp"
+        android:layout_marginLeft="200dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="570dp"
         android:background="@drawable/lingkaran2"
         />
     <View
@@ -64,23 +69,25 @@
         android:layout_width="14dp"
         android:layout_height="14dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="197dp"
+        android:layout_marginLeft="230dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="570dp"
         android:background="@drawable/lingkaran1hijau"
         />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="210dp"
-        android:layout_height="40dp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/hijautua"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="94dp"
+        android:layout_marginLeft="92dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="526dp"
+        android:layout_marginTop="600dp"
+        android:fontFamily="@font/poppinsbold"
         android:text="@string/capt_button2"
         android:textStyle="bold"
         android:textSize="12sp"
         />
 
-</RelativeLayout>
+</FrameLayout>

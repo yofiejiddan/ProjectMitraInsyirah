@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanUtamaFragment">
+
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/border_daftar"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <View
+        android:id="@+id/durian_3"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/logoinsyirah"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/mitrainsyir"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="106dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_horizontal|top"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left|top"
+        android:text="@string/form_nama"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="54dp"
+        android:shadowColor="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="238dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left|top"
+        android:text="@string/form_alamat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="54dp"
+        android:backgroundTint="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left|top"
+        android:text="@string/form_email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="54dp"
+        android:backgroundTint="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/nama_usaha"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left|top"
+        android:text="@string/form_namausaha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="54dp"
+        android:backgroundTint="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <TextView
+        android:id="@+id/nama_password"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left|top"
+        android:text="@string/form_password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="54dp"
+        android:backgroundTint="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <Button
+        android:id="@+id/button_daft"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="@color/hijautua"
+        android:text="@string/capt_buttondaftar"
+        android:fontFamily="@font/poppinsbold"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_masuk"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_masuk"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="520dp"
+        android:text="@string/login_button"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</RelativeLayout>
