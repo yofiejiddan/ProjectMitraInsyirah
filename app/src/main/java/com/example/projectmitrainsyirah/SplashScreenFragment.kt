@@ -19,7 +19,7 @@ class SplashScreenFragment : Fragment() {
         Handler(Looper.getMainLooper()).postDelayed({
             if (!onBoardingFinished()) {
                 findNavController().navigate(
-                    R.id.action_splashScreenFragment3_to_halamanUtamaFragment
+                    R.id.action_splashScreenFragment3_to_loginAplikasi2
                 )
             } else {
                 findNavController().navigate(

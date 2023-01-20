@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HalamanUtamaFragment">
+    tools:context=".vPagerFragment.screen.HalamanUtamaFragment">
 
 
     <View
@@ -44,135 +44,76 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="137dp" />
 
-    <TextView
-        android:id="@+id/nama"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="188dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_nama"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="213dp" />
+
 
     <EditText
+        android:id="@+id/nama"
         android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
         android:layout_marginLeft="54dp"
         android:shadowColor="@color/hijautua"
+        android:text="Nama"
+        android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="213dp" />
 
-    <TextView
+
+
+    <EditText
         android:id="@+id/alamat"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="238dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_alamat"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="272dp" />
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="270dp"
         android:layout_marginLeft="54dp"
+        android:text="Alamat"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="272dp" />
 
-    <TextView
+
+    <EditText
         android:id="@+id/email"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="290dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="328dp" />
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="320dp"
         android:layout_marginLeft="54dp"
+        android:text="Email"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="328dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/nama_usaha"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="340dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_namausaha"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="387dp" />
-
-    <EditText
         android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
         android:layout_marginLeft="54dp"
+        android:text="Nama Usaha"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="387dp" />
 
-    <TextView
-        android:id="@+id/nama_password"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="390dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_password"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="443dp" />
 
     <EditText
+        android:id="@+id/nama_password"
         android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="420dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
         android:layout_marginLeft="54dp"
+        android:text="Password"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -199,7 +140,7 @@
         android:id="@+id/button_masuk"
         android:layout_width="190dp"
         android:layout_height="50dp"
-        android:background="@drawable/button_masuk"
+        android:backgroundTint="@color/hijaumuda"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="520dp"
         android:text="@string/login_button"

@@ -15,8 +15,8 @@
             app:popUpTo="@id/splashScreenFragment3"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_splashScreenFragment3_to_halamanUtamaFragment"
-            app:destination="@id/halamanUtamaFragment"
+            android:id="@+id/action_splashScreenFragment3_to_loginAplikasi2"
+            app:destination="@id/loginAplikasi2"
             app:popUpTo="@id/splashScreenFragment3"
             app:popUpToInclusive="true" />
     </fragment>
@@ -26,13 +26,13 @@
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager">
         <action
-            android:id="@+id/action_viewPagerFragment_to_halamanUtamaFragment"
-            app:destination="@id/halamanUtamaFragment"
+            android:id="@+id/action_viewPagerFragment_to_loginAplikasi2"
+            app:destination="@id/loginAplikasi2"
             app:popUpTo="@id/viewPagerFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/halamanUtamaFragment"
-        android:name="com.example.projectmitrainsyirah.HalamanUtamaFragment"
-        android:label="fragment_halaman_utama"
-        tools:layout="@layout/fragment_halaman_utama" />
+    <activity
+        android:id="@+id/loginAplikasi2"
+        android:name="com.example.projectmitrainsyirah.LoginAplikasi"
+        android:label="activity_login_aplikasi"
+        tools:layout="@layout/activity_login_aplikasi" />
 </navigation>

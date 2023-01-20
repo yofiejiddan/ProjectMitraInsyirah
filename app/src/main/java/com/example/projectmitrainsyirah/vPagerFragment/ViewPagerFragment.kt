@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.projectmitrainsyirah.vPagerFragment.screen.HalamanUtamaFragment
 import com.example.projectmitrainsyirah.R
 import com.example.projectmitrainsyirah.databinding.FragmentViewPagerBinding
 import com.example.projectmitrainsyirah.vPagerFragment.screen.LandingPage1
@@ -24,7 +25,8 @@ class ViewPagerFragment : Fragment() {
         val fragmentList = arrayListOf(
             LandingPage1(),
             LandingPage2(),
-            LandingPage3()
+            LandingPage3(),
+            HalamanUtamaFragment(),
         )
         val adapter = ViewPagerAdapter(fragmentList,
             requireActivity().supportFragmentManager, lifecycle)
