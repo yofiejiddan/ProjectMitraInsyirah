@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".DetailProduk3">
 
     <View
         android:layout_width="match_parent"
@@ -25,65 +28,50 @@
 
 
     <TextView
+        android:id="@+id/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
-        android:layout_marginLeft="-250dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="-255dp"
+        android:text="Kue Padalaran Khas Jambi 250gram "
         android:fontFamily="@font/poppinsbold"
-        android:text="Kue Padalaran Khas Jambi 500gr"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="314dp" />
-
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
     <TextView
+        android:id="@+id/stok1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
         android:text="Jumlah : 10 Stok"
         android:fontFamily="@font/poppinsbold"
-        android:textAlignment="center"
-        android:layout_marginTop="410dp"
-        android:layout_marginLeft="-210dp"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="408dp" />
-
+        android:layout_marginLeft="-256dp"
+        android:textSize="16sp"
+        android:textColor="@color/abu"
+        android:layout_gravity="center" />
     <TextView
+        android:id="@+id/stok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rp 58.000"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="-110dp"
         android:fontFamily="@font/poppins"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_red_light"
+        android:text="Rp 58.000"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="-98dp"
-        android:layout_marginTop="445dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="432dp" />
-
+        android:textColor="@color/merah"
+        android:layout_gravity="center" />
     <TextView
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="-190dp"
-        android:layout_marginTop="485dp"
-        android:fontFamily="@font/poppinsbold"
-        android:text="Kue Padalarang Khas Jambi ini dikirim pada tanggal 16 November 2022 dengan ketahanan makanan ini hanya 1 minggu. "
+        android:id="@+id/deskripsi"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="-200dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="483dp" />
-
-
+        android:text="Kue Padalarang Meses ini dikirim pada tanggal 16 November 2022 dengan ketahanan makanan ini hanya 1 minggu."
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
 
 
 </LinearLayout>

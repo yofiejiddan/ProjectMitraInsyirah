@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,21 +18,23 @@
             android:layout_height="55dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="165dp"
+            android:layout_marginLeft="170dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/logoinsyirah" />
 
         <TextView
-            android:layout_width="125dp"
+            android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:fontFamily="@font/poppins"
             android:textStyle="bold"
+            android:textSize="18sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="-90dp"
             android:layout_marginTop="55dp"
             android:gravity="center_horizontal|top"
             android:text="@string/app_name"
+            android:onClick="keAbout"
             android:textColor="@color/white"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
     </LinearLayout>
@@ -41,6 +43,8 @@
         android:id="@+id/rectangle_7"
         android:layout_width="201dp"
         android:layout_height="9dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/garisabout"
@@ -50,13 +54,16 @@
 
     <TextView
         android:layout_width="142dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:textStyle="bold"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="0dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:gravity="center_horizontal|top"
         android:text="@string/about"
+        android:textSize="16sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +76,7 @@
         android:backgroundTint="#A6FF00"
         android:background="@drawable/about_rounded"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -88,7 +96,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:textSize="14sp"
+            android:textSize="12sp"
             app:layout_constraintHorizontal_bias="0.485"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -107,19 +115,21 @@
         android:gravity="center_horizontal|top"
         android:text="@string/kontak_about"
         android:elevation="10dp"
+        android:layout_marginLeft="125dp"
         android:fontFamily="@font/poppins"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="16sp"
+        android:layout_marginTop="-70dp"
+        android:textSize="14sp"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteY="410dp" />
 
     <View
         android:id="@+id/rectangle_8"
         android:layout_width="500dp"
         android:layout_height="9dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="140dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/garisabout"
@@ -167,4 +177,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

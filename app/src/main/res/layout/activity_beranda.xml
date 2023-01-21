@@ -41,7 +41,7 @@
 
         <TextView
             android:layout_width="65dp"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="3dp"
@@ -52,11 +52,11 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="-118dp"
+            android:layout_marginLeft="-60dp"
             android:fontFamily="@font/poppinsbold"
             android:layout_marginTop="35dp"
             android:gravity="center_horizontal|top"
@@ -64,18 +64,347 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
     </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listproduct"
-        android:layout_width="420dp"
-        android:layout_height="618dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="Kedetail1"
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ImageButton
+                android:id="@+id/foto_produk"
+                android:layout_width="102dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kuebolu"
+                android:onClick="gambardetail" />
+
+            <TextView
+                android:id="@+id/namaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Kue Bolu Gulung Meses 250Gram"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/jumlahstok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Jumlah Stok : 5"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hargaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="75dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Rp 45.000"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"></RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-145dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageButton
+            android:id="@+id/foto_produk2"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/kuepadalaran"
+            android:onClick="gambardetail3" />
+
+        <TextView
+            android:id="@+id/namaproduk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="16dp"
+            android:text="Kue Padamaran Khas Jambi"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/jumlahstok2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="45dp"
+            android:text="Jumlah Stok : 10"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hargaproduk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="72dp"
+            android:text="Rp 58.000"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rv_list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-45dp"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <ImageButton
+                android:id="@+id/foto_produk3"
+                android:layout_width="102dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/rotiabon"
+                android:onClick="gambardetail2" />
+
+            <TextView
+                android:id="@+id/namaproduk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="16dp"
+                android:text="Roti Abon Ayam"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/jumlahstok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="45dp"
+                android:text="Jumlah Stok : 8"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hargaproduk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="75dp"
+                android:text="Rp 29.000"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_list4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground">
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageButton
+            android:id="@+id/foto_produk4"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/kuebrownis"
+            android:onClick="gambardetail4" />
+
+        <TextView
+            android:id="@+id/namaproduk4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Brownies Kukus Cokelat 500gram"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/jumlahstok4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="45dp"
+            android:text="Jumlah Stok : 20"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hargaproduk4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="75dp"
+            android:text="Rp 55.000"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="500dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/garisabout"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="3dp"
-        tools:listitem="@layout/activity_layout_list" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/menu_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="keBeranda"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:onClick="keFormTambah"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tambah"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:onClick="keProfile"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/profilmenu"/>
+
+    </LinearLayout>
 
 
 

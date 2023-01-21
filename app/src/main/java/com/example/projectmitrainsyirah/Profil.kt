@@ -25,4 +25,9 @@ class Profil : AppCompatActivity() {
         i.putExtra("Value1", "Sedang berada di halaman Register")
         startActivity(i)
     }
+    fun keAbout(view: View?){
+        val i = Intent(applicationContext, About::class.java)
+        i.putExtra("Value1", "Sedang berada di halaman Register")
+        startActivity(i)
+    }
 }

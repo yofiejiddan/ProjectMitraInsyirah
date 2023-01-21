@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/title3"
         android:layout_width="255dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="80dp"
         android:layout_alignParentTop="true"
@@ -78,7 +78,7 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:backgroundTint="@color/hijautua"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="92dp"

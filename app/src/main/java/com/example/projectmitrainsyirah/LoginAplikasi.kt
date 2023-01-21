@@ -71,7 +71,7 @@ class LoginAplikasi : AppCompatActivity() {
                     sessionManager.setLoggin(true)
                     sessionManager.setEmail(email)
 //                    findNavController().navigate(R.id.action_loginAcitvity_to_berandaFragment2)
-                    val i = Intent(applicationContext, Profil::class.java)
+                    val i = Intent(applicationContext, Beranda::class.java)
                     i.putExtra("Value1", "Selamat Datang")
                     startActivity(i)
                 } else {
