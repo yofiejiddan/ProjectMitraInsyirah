@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vPagerFragment.screen.HalamanUtamaFragment">
+    tools:context=".RegisterActivity">
 
 
     <View
@@ -13,7 +13,7 @@
         android:layout_height="450dp"
         android:layout_marginLeft="22dp"
         android:layout_marginTop="140dp"
-        android:background="@drawable/border_daftar"
+        android:background="@drawable/button2"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="190dp" />
 
@@ -53,7 +53,8 @@
         android:layout_marginTop="185dp"
         android:layout_marginLeft="54dp"
         android:shadowColor="@color/hijautua"
-        android:text="Nama"
+        android:hint="Nama"
+        android:textSize="12sp"
         android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -68,7 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="238dp"
         android:layout_marginLeft="54dp"
-        android:text="Alamat"
+        android:hint="Alamat"
+        android:textSize="12sp"
         android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp"
         android:layout_marginLeft="54dp"
-        android:text="Email"
+        android:hint="Email"
+        android:textSize="12sp"
         android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +100,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="340dp"
         android:layout_marginLeft="54dp"
-        android:text="Nama Usaha"
+        android:hint="Nama Usaha"
+        android:textSize="12sp"
         android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +116,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="390dp"
         android:layout_marginLeft="54dp"
-        android:text="Password"
+        android:hint="Password"
+        android:textSize="12sp"
         android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,6 +149,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="520dp"
         android:text="@string/login_button"
+        android:onClick="keLogin"
         android:fontFamily="@font/poppinsbold"
         android:textSize="12sp"
         android:textStyle="bold"

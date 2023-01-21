@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Profil">
+
+    <LinearLayout
+        android:layout_width="419dp"
+        android:layout_height="85dp"
+        android:background="@color/hijautua">
+
+        <View
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logoinsyirah" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-92dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/app_name"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ellipse_7"
+        android:layout_width="201dp"
+        android:layout_height="201dp"
+        app:cardCornerRadius="120dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nama : Jeffry Agung "
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Alamat : Jl. Sudirman lorong dharma 2"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email : jeffrey@gmail.com"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/namausaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Nama Usaha: Bakery Oke"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Password : 12345"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_gravity="center" />
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="500dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/garisabout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/menu_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="keBeranda"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:onClick="keFormTambah"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tambah"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:onClick="keProfile"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/profilmenu"/>
+
+    </LinearLayout>
+
+</LinearLayout>

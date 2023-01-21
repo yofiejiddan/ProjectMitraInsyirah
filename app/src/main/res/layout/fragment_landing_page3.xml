@@ -85,7 +85,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="600dp"
         android:fontFamily="@font/poppinsbold"
-        android:text="@string/capt_button2"
+        android:text="Masuk ke Mitra Sekarang"
         android:textStyle="bold"
         android:textSize="12sp"
         />

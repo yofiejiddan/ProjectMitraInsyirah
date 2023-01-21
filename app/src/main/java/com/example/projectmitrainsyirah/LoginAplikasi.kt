@@ -4,19 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import com.example.projectmitrainsyirah.Model.ApiInterface
 import com.example.projectmitrainsyirah.Model.LoginBody
 import com.example.projectmitrainsyirah.Model.RetrofitInstance
 import com.example.projectmitrainsyirah.Session.SessionManager
-import com.example.projectmitrainsyirah.databinding.FragmentHalamanUtamaBinding
-import com.example.projectmitrainsyirah.vPagerFragment.screen.HalamanUtamaFragment
 import okhttp3.ResponseBody
 
 class LoginAplikasi : AppCompatActivity() {
@@ -29,7 +24,7 @@ class LoginAplikasi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_aplikasi)
-        title = "KotlinApp"
+        title = "Mitra Insyirah"
         button = findViewById(R.id.button_masuk)
         editText1 = findViewById(R.id.email)
         editText2 = findViewById(R.id.nama_password)
@@ -42,6 +37,11 @@ class LoginAplikasi : AppCompatActivity() {
         }
 
     }
+    fun keRegister(view: View?){
+        val i = Intent(applicationContext, RegisterActivity::class.java)
+        i.putExtra("Value1", "Sedang berada di halaman Register")
+        startActivity(i)
+        }
 
     private fun signin(email: String, password: String) {
         val retIn = RetrofitInstance.getRetrofitInstance().create(ApiInterface::class.java)
@@ -71,7 +71,7 @@ class LoginAplikasi : AppCompatActivity() {
                     sessionManager.setLoggin(true)
                     sessionManager.setEmail(email)
 //                    findNavController().navigate(R.id.action_loginAcitvity_to_berandaFragment2)
-                    val i = Intent(applicationContext, Beranda::class.java)
+                    val i = Intent(applicationContext, Profil::class.java)
                     i.putExtra("Value1", "Selamat Datang")
                     startActivity(i)
                 } else {

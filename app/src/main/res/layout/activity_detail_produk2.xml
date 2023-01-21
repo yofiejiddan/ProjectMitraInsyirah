@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:layout_marginTop="-72dp"
+        android:background="@drawable/deskripsi" />
+
+    <ImageView
+        android:id="@+id/gambardeskripsi"
+        android:layout_width="186dp"
+        android:layout_height="187dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="-295dp"
+        android:layout_marginTop="150dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:background="@drawable/rotiabon"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="-190dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Roti Abon Ayam 12 Pcs"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/stok"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stok"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <TextView
+        android:id="@+id/stok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah : 8 Stok"
+        android:fontFamily="@font/poppinsbold"
+        android:textAlignment="center"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="-165dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 29.000"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="-95dp"
+        android:layout_marginTop="445dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="-185dp"
+        android:layout_marginTop="485dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Roti Abon Ayam ini dikirim pada tanggal 16 November 2022 dengan ketahanan makanan ini hanya 1 minggu. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="483dp" />
+
+
+
+
+</LinearLayout>

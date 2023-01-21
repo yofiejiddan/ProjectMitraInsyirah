@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FormTambahBarang">
+
+    <LinearLayout
+        android:layout_width="419dp"
+        android:layout_height="85dp"
+        android:background="@color/hijautua">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logoinsyirah" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-92dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/app_name"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/form_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="Form Tambah Produk"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="85dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="120dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/line_1"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@color/hijautua"
+        android:hint="Nama Produk"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="200dp" />
+
+
+    <EditText
+        android:id="@+id/line_2"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/hijautua"
+        android:hint="Jumlah Stok"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="265dp" />
+
+
+    <EditText
+        android:id="@+id/line_3"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:hint="Harga"
+        android:fontFamily="@font/poppins"
+        android:backgroundTint="@color/hijautua"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <EditText
+        android:id="@+id/line_5"
+        android:layout_width="325dp"
+        android:backgroundTint="@color/hijautua"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:hint="Deskripsi"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:text="Tambah"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/hijautua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <View
+        android:id="@+id/rectangle_7"
+        android:layout_width="500dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/garisabout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/menu_home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="keBeranda"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:onClick="keFormTambah"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tambah"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:onClick="keProfile"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/profilmenu"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

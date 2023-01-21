@@ -12,7 +12,7 @@
         <action
             android:id="@+id/action_splashScreenFragment3_to_viewPagerFragment"
             app:destination="@id/viewPagerFragment"
-            app:popUpTo="@id/splashScreenFragment3"
+            app:popUpTo="@id/loginAplikasi2"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashScreenFragment3_to_loginAplikasi2"
@@ -28,7 +28,8 @@
         <action
             android:id="@+id/action_viewPagerFragment_to_loginAplikasi2"
             app:destination="@id/loginAplikasi2"
-            app:popUpTo="@id/viewPagerFragment" />
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <activity
         android:id="@+id/loginAplikasi2"

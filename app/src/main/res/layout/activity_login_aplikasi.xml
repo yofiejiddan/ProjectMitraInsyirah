@@ -53,10 +53,10 @@
 
     <View
         android:layout_width="346dp"
-        android:layout_height="272dp"
+        android:layout_height="310dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="240dp"
-        android:background="@drawable/border_daftar"
+        android:background="@drawable/button2"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="190dp" />
 
@@ -88,54 +88,34 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="137dp" />
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="290dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="328dp" />
+
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp"
         android:layout_marginLeft="54dp"
         android:backgroundTint="@color/hijautua"
+        android:hint="Email"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="328dp" />
 
-    <TextView
-        android:id="@+id/nama_password"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="360dp"
-        android:fontFamily="@font/poppinsbold"
-        android:gravity="left|top"
-        android:text="@string/form_password"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="443dp" />
+
 
     <EditText
+        android:id="@+id/nama_password"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="54dp"
         android:layout_marginTop="360dp"
+        android:hint="Password"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/hijautua"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -157,6 +137,24 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_daft"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="101dp"
+        android:onClick="keRegister"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="@color/hijaumuda"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/capt_buttondaftar"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </RelativeLayout>

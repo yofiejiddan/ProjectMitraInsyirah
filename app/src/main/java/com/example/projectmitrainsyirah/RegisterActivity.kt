@@ -1,29 +1,19 @@
-package com.example.projectmitrainsyirah.vPagerFragment.screen
+package com.example.projectmitrainsyirah
 
-import android.content.Context
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
-import com.example.projectmitrainsyirah.LoginAplikasi
 import com.example.projectmitrainsyirah.Model.ApiInterface
 import com.example.projectmitrainsyirah.Model.RegisterBody
 import com.example.projectmitrainsyirah.Model.RetrofitInstance
-import com.example.projectmitrainsyirah.R
-import com.example.projectmitrainsyirah.databinding.FragmentHalamanUtamaBinding
-import okhttp3.Response
 import okhttp3.ResponseBody
 
-
-class HalamanUtamaFragment : Fragment() {
-    private lateinit var binding: FragmentHalamanUtamaBinding
+class RegisterActivity : AppCompatActivity() {
     lateinit var button: Button
     lateinit var editText1: EditText
     lateinit var editText2: EditText
@@ -38,9 +28,9 @@ class HalamanUtamaFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_halaman_utama)
-        title = "KotlinApp"
-        button = findViewById(R.id.btn_daft)
+        setContentView(R.layout.activity_register)
+        title = "Mitra Insyirah"
+        button = findViewById(R.id.button_daft)
         editText1 = findViewById(R.id.nama)
         editText2 = findViewById(R.id.alamat)
         editText3 = findViewById(R.id.email)
@@ -53,7 +43,7 @@ class HalamanUtamaFragment : Fragment() {
             string3 = editText3.text.toString()
             string4 = editText4.text.toString()
             string5 = editText5.text.toString()
-            singup(string1, string2, string3)
+            singup(string1, string2, string3, string4, string5)
             Log.i("data : ", string1 + string2 + string3 + string4 + string5)
         }
     }
@@ -64,15 +54,15 @@ class HalamanUtamaFragment : Fragment() {
         startActivity(i)
     }
 
-    private fun singup(nama_lengkap: String, email: String, password: String){
+    private fun singup(nama_pengguna: String, alamat_pengguna: String, email: String, nama_usaha: String, password: String){
         val retIn = RetrofitInstance.getRetrofitInstance().create(ApiInterface::class.java)
-        val registerInfo = RegisterBody(nama_lengkap, email, password)
+        val registerInfo = RegisterBody(nama_pengguna, alamat_pengguna, email, nama_usaha, password)
 
         retIn.registerUser(registerInfo).enqueue(object :
             retrofit2.Callback<ResponseBody> {
             override fun onFailure(call: retrofit2.Call<ResponseBody>, t: Throwable) {
                 Toast.makeText(
-                    context,
+                    this@RegisterActivity,
                     t.message,
                     Toast.LENGTH_SHORT
                 ).show()
@@ -80,21 +70,17 @@ class HalamanUtamaFragment : Fragment() {
 
             override fun onResponse(
                 call: retrofit2.Call<ResponseBody>,
-                response: Response<ResponseBody>
+                response: retrofit2.Response<ResponseBody>
             ) {
                 if(response.code() == 201){
-                    Toast.makeText(context,  "Registrasi "+et_nama.text.toString()+" Berhasil!", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_registerFragment_to_loginAcitvity)
-                    })
-        }
+                    Toast.makeText(this@RegisterActivity,  "Registrasi "+editText1.text.toString()+" Berhasil!", Toast.LENGTH_SHORT).show()
+                    val i = Intent(applicationContext, Beranda::class.java)
+                    i.putExtra("Value1", "Terimakasih, kamu berhasil terdaftar")
+                    startActivity(i)
+                }
+            }
+            })
+    }
 }
 
 
-    private fun onBoardingFinished(){
-        val sharedPref = requireActivity()
-            .getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
-        editor.putBoolean("Selesai", true)
-        editor.apply()
-
-    }    }

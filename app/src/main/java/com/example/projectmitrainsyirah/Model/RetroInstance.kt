@@ -12,11 +12,11 @@ import retrofit2.http.POST
 
 interface ApiInterface{
     @Headers("Content-Type:application/json")
-    @POST("login")
+    @POST("logins")
     fun login(@Body info: LoginBody): retrofit2.Call<ResponseBody>
 
     @Headers("Content-Type:application/json")
-    @POST("register")
+    @POST("registers")
     fun registerUser(
         @Body info: RegisterBody
     ): retrofit2.Call<ResponseBody>
